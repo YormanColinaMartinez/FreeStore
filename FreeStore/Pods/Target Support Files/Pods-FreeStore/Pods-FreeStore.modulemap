@@ -1,0 +1,6 @@
+framework module Pods_FreeStore {
+  umbrella header "Pods-FreeStore-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module Pods_FreeStore_FreeStoreUITests {
+  umbrella header "Pods-FreeStore-FreeStoreUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
