@@ -16,6 +16,8 @@
 		18E2A5682C1DF06E001C16AF /* FreeStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E2A5672C1DF06E001C16AF /* FreeStoreTests.swift */; };
 		18E2A5722C1DF06E001C16AF /* FreeStoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E2A5712C1DF06E001C16AF /* FreeStoreUITests.swift */; };
 		18E2A5742C1DF06E001C16AF /* FreeStoreUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E2A5732C1DF06E001C16AF /* FreeStoreUITestsLaunchTests.swift */; };
+		18E2A58A2C1DF7C0001C16AF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E2A5892C1DF7C0001C16AF /* LoginViewController.swift */; };
+		18E2A58D2C209BB6001C16AF /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E2A58C2C209BB6001C16AF /* Login.swift */; };
 		43272F93CB6A4F4BA992436B /* Pods_FreeStore_FreeStoreUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06872E51A0984E52124C0442 /* Pods_FreeStore_FreeStoreUITests.framework */; };
 		70F2C7F9B84741EE1B9F78D4 /* Pods_FreeStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6292F528F6932B578104916E /* Pods_FreeStore.framework */; };
 		BE9DD30699AC91138E51A429 /* Pods_FreeStoreTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BB509A8B87CAEADACB43A38 /* Pods_FreeStoreTests.framework */; };
@@ -54,6 +56,8 @@
 		18E2A56D2C1DF06E001C16AF /* FreeStoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreeStoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18E2A5712C1DF06E001C16AF /* FreeStoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeStoreUITests.swift; sourceTree = "<group>"; };
 		18E2A5732C1DF06E001C16AF /* FreeStoreUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeStoreUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		18E2A5892C1DF7C0001C16AF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		18E2A58C2C209BB6001C16AF /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		6292F528F6932B578104916E /* Pods_FreeStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FreeStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		671BC0FDDEEC636F7B6AA7F3 /* Pods-FreeStoreTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeStoreTests.release.xcconfig"; path = "Target Support Files/Pods-FreeStoreTests/Pods-FreeStoreTests.release.xcconfig"; sourceTree = "<group>"; };
 		71710896A1182726585E9755 /* Pods-FreeStore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeStore.debug.xcconfig"; path = "Target Support Files/Pods-FreeStore/Pods-FreeStore.debug.xcconfig"; sourceTree = "<group>"; };
@@ -116,13 +120,16 @@
 		18E2A54F2C1DF069001C16AF /* FreeStore */ = {
 			isa = PBXGroup;
 			children = (
-				18E2A5502C1DF069001C16AF /* AppDelegate.swift */,
-				18E2A5522C1DF069001C16AF /* SceneDelegate.swift */,
+				18E2A5862C1DF203001C16AF /* Basket */,
+				18E2A5852C1DF1F8001C16AF /* ProductDetail */,
+				18E2A5842C1DF1F2001C16AF /* Home */,
+				18E2A5832C1DF1EC001C16AF /* Login */,
+				18E2A55E2C1DF06E001C16AF /* Info.plist */,
+				18E2A5822C1DF1CE001C16AF /* Resources */,
+				18E2A5812C1DF1BB001C16AF /* LaunchScreen */,
+				18E2A5802C1DF1AA001C16AF /* Main */,
 				18E2A5542C1DF069001C16AF /* ViewController.swift */,
 				18E2A5562C1DF069001C16AF /* Main.storyboard */,
-				18E2A5592C1DF06E001C16AF /* Assets.xcassets */,
-				18E2A55B2C1DF06E001C16AF /* LaunchScreen.storyboard */,
-				18E2A55E2C1DF06E001C16AF /* Info.plist */,
 			);
 			path = FreeStore;
 			sourceTree = "<group>";
@@ -142,6 +149,77 @@
 				18E2A5732C1DF06E001C16AF /* FreeStoreUITestsLaunchTests.swift */,
 			);
 			path = FreeStoreUITests;
+			sourceTree = "<group>";
+		};
+		18E2A5802C1DF1AA001C16AF /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				18E2A5502C1DF069001C16AF /* AppDelegate.swift */,
+				18E2A5522C1DF069001C16AF /* SceneDelegate.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		18E2A5812C1DF1BB001C16AF /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				18E2A55B2C1DF06E001C16AF /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		18E2A5822C1DF1CE001C16AF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				18E2A58B2C209B95001C16AF /* Strings */,
+				18E2A5592C1DF06E001C16AF /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		18E2A5832C1DF1EC001C16AF /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				18E2A5872C1DF7A4001C16AF /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		18E2A5842C1DF1F2001C16AF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		18E2A5852C1DF1F8001C16AF /* ProductDetail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ProductDetail;
+			sourceTree = "<group>";
+		};
+		18E2A5862C1DF203001C16AF /* Basket */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Basket;
+			sourceTree = "<group>";
+		};
+		18E2A5872C1DF7A4001C16AF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				18E2A5892C1DF7C0001C16AF /* LoginViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18E2A58B2C209B95001C16AF /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				18E2A58C2C209BB6001C16AF /* Login.swift */,
+			);
+			path = Strings;
 			sourceTree = "<group>";
 		};
 		4662BB50E4F729AD8DE318DD /* Frameworks */ = {
@@ -164,7 +242,6 @@
 				80438517F144F6AEAFD4448B /* Pods-FreeStoreTests.debug.xcconfig */,
 				671BC0FDDEEC636F7B6AA7F3 /* Pods-FreeStoreTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -371,6 +448,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18E2A58A2C1DF7C0001C16AF /* LoginViewController.swift in Sources */,
+				18E2A58D2C209BB6001C16AF /* Login.swift in Sources */,
 				18E2A5552C1DF069001C16AF /* ViewController.swift in Sources */,
 				18E2A5512C1DF069001C16AF /* AppDelegate.swift in Sources */,
 				18E2A5532C1DF069001C16AF /* SceneDelegate.swift in Sources */,
